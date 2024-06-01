@@ -1,0 +1,13 @@
+def sum_of_multiples(m, n):
+    p = (n - 1) // m
+    return m * p * (p + 1) // 2
+
+
+def multiple():
+    t = int(input().strip())
+    for a0 in range(t):
+        n = int(input().strip())
+        total_sum = sum_of_multiples(3, n) + sum_of_multiples(5, n) - sum_of_multiples(15, n)
+        print(total_sum)
+
+multiple()
